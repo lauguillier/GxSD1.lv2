@@ -204,7 +204,7 @@ void Gx_sd1sim_::run_dsp_(uint32_t n_samples)
     if (!bypass_) needs_ramp_down = true;
     else needs_ramp_up = true;
   }
-  // check if raming is needed
+  // check if ramping is needed
   if (needs_ramp_down) {
     for (uint32_t i=0; i<n_samples; i++) {
       if (ramp_down >= 0.0) {
